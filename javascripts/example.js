@@ -1,1 +1,0 @@
-alert('hello, text is successfull')

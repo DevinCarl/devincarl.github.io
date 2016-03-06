@@ -4,7 +4,7 @@ html,body{
 	height: 100%;
 }
 body{
-	font: 16px "Comic Sans MS";
+	font: 16px "Comic Sans MS",Helvetica;
 	background-color: #C5AA8F;
 }
 a{

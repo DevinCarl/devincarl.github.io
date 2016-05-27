@@ -22,7 +22,7 @@ section {
   width: 300px;
   height: 100px;
   background-color: #5DB4D1;
-  margin: 50px;
+  margin: 50px auto;
   text-align: center;
   line-height: 100px;
 }

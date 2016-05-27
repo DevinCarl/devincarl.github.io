@@ -1,0 +1,325 @@
+body {
+  background-color: #f2f2f2;
+}
+header {
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+h2:before {
+  content: "\2665";
+  color: red;
+  margin-right: 5px;
+}
+section {
+  width: 80%;
+  margin: auto
+}
+.box {
+  width: 300px;
+  height: 100px;
+  background-color: #5DB4D1;
+  margin: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+.muti-shadow {
+  box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.5) inset, 20px 20px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.radius {
+  box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.simple {
+  box-shadow: 0px 0px 0px 10px indianred;
+}
+.multiple {
+  box-shadow: 5px 5px 0px 5px lightcoral, -5px -5px 0px 5px mediumvioletred, 0px 0px 0px 10px rgb(200, 200, 200);
+}
+.popup {
+  transform: scale(1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+.popup:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+.floating {
+  position: relative;
+  transform: translateY(0);
+  transition: transform .6s;
+}
+.floating:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  height: 8px;
+  width: 100%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, 0);
+  transition: transform .6s;
+}
+
+/* Hover States */
+
+.floating:hover {
+  transform: translateY(-40px);
+  transition: transform .6s;
+}
+.floating:hover:after {
+  transform: translate(-50%, 40px) scale(0.75);
+  transition: transform .6s;
+}
+
+/*==================================================
+ * paper 1
+ * ===============================================*/
+
+.paper1 {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+/*==================================================
+ * paper 2
+ * ===============================================*/
+
+.paper2 {
+  position: relative;
+}
+.paper2:before,
+.paper2:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.paper2:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ * paper 3
+ * ===============================================*/
+
+.paper3 {
+  position: relative;
+}
+.paper3:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+/*==================================================
+ * paper 4
+ * ===============================================*/
+
+.paper4 {
+  position: relative;
+}
+.paper4:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+/*==================================================
+ * paper 5
+ * ===============================================*/
+
+.paper5 {
+  position: relative;
+}
+.paper5:before,
+.paper5:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  left: 10px;
+  width: 50%;
+  top: 75%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 20px #777;
+  -moz-box-shadow: 0 15px 20px #777;
+  box-shadow: 0 15px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.paper5:after {
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ * paper 6
+ * ===============================================*/
+
+.paper6 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.paper6:before,
+.paper6:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.paper6:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ * paper 7
+ * ===============================================*/
+
+.paper7 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.paper7:before,
+.paper7:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.paper7:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ * paper 8
+ * ===============================================*/
+
+.paper8 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.paper8:before,
+.paper8:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.paper8:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}

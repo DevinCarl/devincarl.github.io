@@ -1,51 +1,58 @@
-html,body{
-	margin: 0;
-	padding: 0;
-	height: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-body{
-	font: 16px "Comic Sans MS", cursive, sans-serif;
-	background-color: #C5AA8F;
+body {
+  font: 16px "Comic Sans MS", cursive, sans-serif;
+  background-color: #C5AA8F;
 }
-a{
-	color: #785547;
-	text-decoration: none;
+a.link {
+  color: #C86A12;
+  text-decoration: none;
 }
-a:hover{
-	color: #C55E0C;
-	text-decoration: underline;
+a.link:hover {
+  color: #3436A9;
+  text-decoration: underline;
 }
-#main-body{
-	position: absolute;
-	top: 0;
-	bottom: 20%;
-	left: 0;
-	right: 0;
-	margin: auto;
-	height: 400px;
+#main-body {
+  position: absolute;
+  top: 0;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 400px;
 }
-
-.welcome-title{
-	text-align: center;
-	color: #C96911;
-	font-size: 42px;
+.welcome-title {
+  text-align: center;
+  color: #C96911;
+  font-size: 42px;
 }
-.large-logo{
-	margin-top: 15%;
+.large-logo {
+  margin-top: 5%;
 }
-figure img{
-	max-width: 100%;
+figure img {
+  max-width: 100%;
 }
-.large-logo{
-	text-align: center;
+.large-logo {
+  text-align: center;
 }
-
-#footer{
-	position: absolute;
-	bottom: 8%;
-	width: 100%;
+#footer {
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
 }
-footer{
-	text-align: right;
-	padding-right: 8%;
+footer {
+  text-align: right;
+  padding-right: 8%;
+}
+.link-list{
+  text-align: center;
+  margin-top: 40px;
+}
+.link-item {
+  display: inline-block;
+  margin: 0 10px;
 }

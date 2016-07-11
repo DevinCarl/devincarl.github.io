@@ -19,6 +19,7 @@ var client = function () {
 		konq: 0,
 		opera: 0,
 		chrome: 0,
+		edge: 0,
 
 		// 具体版本号
 		version: null
@@ -53,8 +54,11 @@ var client = function () {
 		engine.version = RegExp["$1"];
 		engine.webkit = parseFloat(engine.version);
 
-		// chrome or safari
-		if (/Chrome\/(\S+)/.test(ua)) {
+		// chrome or safari or edge
+		if (/Edge\/(\S+)/.test(ua)) {
+			browser.version = RegExp["$1"];
+			browser.edge = parseFloat(browser.version);
+		} else if (/Chrome\/(\S+)/.test(ua)) {
 			browser.version = RegExp["$1"];
 			browser.chrome = parseFloat(browser.version);
 		} else if (/Version\/(S+)/.test(ua)) {
@@ -96,8 +100,8 @@ var client = function () {
 	}
 
 	// 检测浏览器
-	browser.ie = engine.ie;
-	browser.opera = engine.opera;
+	// browser.ie = engine.ie;
+	// browser.opera = engine.opera;
 
 	// 检测平台
 	var pf = navigator.platform;

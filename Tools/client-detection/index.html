@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Client Detection</title>
+</head>
+<body>
+	<h1>Client Detection</h1>
+	<p id="ua"></p>
+	<p class="title">显示引擎：</p>
+	<p id="engine"></p>
+	<p class="title">浏览器：</p>
+	<p id="browser"></p>
+	<p class="title">操作系统：</p>
+	<p id="system"></p>
+	<script src="js/clientDetection.js"></script>
+	<script>
+
+		document.getElementById("ua").innerHTML = navigator.userAgent;
+
+		var engine = browser = system = '';
+		for( var i in client.engine) {
+			if (client.engine[i]) {
+				engine += i +": "+ client.engine[i] + ' ';
+			}
+		}
+
+		for( var i in client.browser) {
+			if (client.browser[i]) {
+				browser += i +": "+ client.browser[i] + ' ';
+			}
+		}
+
+		for( var i in client.system) {
+			if (client.system[i]) {
+				system += i +": "+ client.system[i] + ' ';
+			}
+		}
+
+
+		document.getElementById("engine").innerHTML = engine;
+		document.getElementById("browser").innerHTML = browser;
+		document.getElementById("system").innerHTML = system;
+	</script>
+</body>
+</html>

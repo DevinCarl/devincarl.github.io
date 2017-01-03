@@ -50,6 +50,11 @@ function dcPanorama(frame, el, opt) {
 
     that.$el.css('transform', 'translate3d('+dx+'px,'+dy+'px,0');
 
+    $('.info-val.o_compass').text(Math.round(or.o_compass));
+    // $('.info-val.compass').text(com);
+    // $('.info-val.d_com').text(d_com);
+    // $('.info-val.dx').text(dx);
+    // $('.info-val.dy').text(dy);
   }
 
 }

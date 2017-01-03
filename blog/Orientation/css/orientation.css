@@ -7,7 +7,12 @@ body{
 }
 h1,h2{
     margin: 0;
-
+    font-size: inherit;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .info-layer{
     position: absolute;
@@ -15,12 +20,16 @@ h1,h2{
     top: 30px;
     color: #fff;
     z-index: 1;
-    padding: 20px;
+    padding: 10px 20px;
     background: rgba(0,0,0,.4);
     border-radius: 4px;
+    font-size: 18px;
+    line-height: 30px;
 }
-.info-caption{
-    margin-bottom: 15px;
+.orientation-info{
+    margin-top: 10px;
+    line-height: 24px;
+    font-size: 16px;
 }
 .vr-frame{
     width: 100%;

@@ -1,5 +1,6 @@
 $(function () {
   $('.vr-img').one('load', function() {
+    $(this).addClass('loaded');
     var hei = $('.vr-frame').height() + 200;
     $(this).height(hei);
     var wid = $(this).width();

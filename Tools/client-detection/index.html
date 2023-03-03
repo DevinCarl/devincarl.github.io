@@ -13,12 +13,14 @@
 	<p id="browser"></p>
 	<p class="title">操作系统：</p>
 	<p id="system"></p>
+	<p class="title">分辨率：</p>
+	<p id="resolution"></p>
 	<script src="js/clientDetection.js"></script>
 	<script>
 
 		document.getElementById("ua").innerHTML = navigator.userAgent;
 
-		var engine = browser = system = '';
+		var engine = browser = system = resolution = '';
 		for( var i in client.engine) {
 			if (client.engine[i]) {
 				engine += i +": "+ client.engine[i] + ' ';
@@ -36,10 +38,12 @@
 				system += i +": "+ client.system[i] + ' ';
 			}
 		}
-
+		
+		resolution = `${widnow.innerWidth} x ${widnow.innerHeight}; devicePixelRatio: ${devicePixelRatio}`
 
 		document.getElementById("engine").innerHTML = engine;
 		document.getElementById("browser").innerHTML = browser;
+		document.getElementById("system").innerHTML = system;
 		document.getElementById("system").innerHTML = system;
 	</script>
 </body>
